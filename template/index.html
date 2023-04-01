@@ -13,6 +13,28 @@ body {
 </head>
 <body>
 <h1 style="text-align: center;">Сервис API реализованный на Flask</h1>
-<h2>Описание основных функций:</h2>
+<h2 style="text-align: center;">Описание основных функций:</h2>
+<h3>Регистрация пользователя</h3>
+<h4>[POST] http://127.0.0.1:5051/user/register/?name=[PARAMS]&email=[PARAMS]&pwd=[PARAMS]</h4>
+<h5>[PARAMS] - заменить своими значениями</h5>
+<h3>Вход в систему</h3>
+<h4>[POST] http://127.0.0.1:5051/user/login/?name=[PARAMS]&pwd=[PARAMS]</h4>
+<h5>[PARAMS] - заменить своими значениями</h5>
+<h3>Выход из системы</h3>
+<h4>[POST] http://127.0.0.1:5051/user/logout</h4>
+<h3>Добавление объявление</h3>
+<h4>[POST] http://127.0.0.1:5051/advert/?title=[PARAMS]&description=[PARAMS]</h4>
+<h5>[PARAMS] - заменить своими значениями</h5>
+<h3>Получить объявление</h3>
+<h4>[GET] http://127.0.0.1:5051/advert/[PARAMS]</h4>
+<h5>[PARAMS] - ID номер объявления</h5>
+<h3>Редактировать объявление</h3>
+<h4>[PATCH] http://127.0.0.1:5051/advert/[PARAMS]/?description=[NEW PARAMS]</h4>
+<h5>[PARAMS] - ID номер объявления</h5>
+<h5>[NEW PARAMS] - Новое значение</h5>
+<h3>Удалить объявление</h3>
+<h4>[DELETE] http://127.0.0.1:5051/advert/[PARAMS]</h4>
+<h5>[PARAMS] - ID номер объявления</h5>
+</h4>
 </body>
 </html>

@@ -1,5 +1,5 @@
-import psycopg2
 from configuration import env
+import psycopg2
 
 
 def postgres_test():
